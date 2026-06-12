@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Agro Forte, Futuro Sustentável</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+  <div class="logo">Agro Forte</div>
+  <ul class="nav-links">
+    <li><a href="#sustentabilidade">Sustentabilidade</a></li>
+    <li><a href="#numeros">Números</a></li>
+    <li><a href="#depoimentos">Depoimentos</a></li>
+    <li><a href="#parceiros">Parceiros</a></li>
+  </ul>
+</nav>
+
+<header>
+  <div class="hero">
+    <h1>🌱 Agro Forte, Futuro Sustentável</h1>
+    <p>Produzir mais, preservar melhor e garantir um futuro equilibrado. O agronegócio moderno une tecnologia, produtividade e respeito ao meio ambiente.</p>
+    <a href="#sustentabilidade" class="btn">Conheça Nossa Visão</a>
+  </div>
+</header>
+
+<section id="sustentabilidade">
+  <div class="section-title">
+    <h2>Equilíbrio Entre Produção e Natureza</h2>
+  </div>
+
+  <div class="cards">
+    <div class="card">
+      <h3>🚜 Produção Inteligente</h3>
+      <p>Uso de drones e sensores para aumentar a produtividade reduzindo desperdícios.</p>
+    </div>
+    <div class="card">
+      <h3>🌳 Preservação Ambiental</h3>
+      <p>Proteção de áreas verdes e biodiversidade.</p>
+    </div>
+    <div class="card">
+      <h3>💧 Gestão da Água</h3>
+      <p>Irrigação eficiente e monitoramento constante dos recursos hídricos.</p>
+    </div>
+    <div class="card">
+      <h3>♻️ Energia Renovável</h3>
+      <p>Energia solar e biomassa para reduzir impactos ambientais.</p>
+    </div>
+  </div>
+</section>
+
+<section id="numeros">
+  <div class="section-title">
+    <h2>Números Que Inspiram</h2>
+  </div>
+  <div class="stats">
+    <div class="stat"><h3>+90%</h3><p>Eficiência operacional</p></div>
+    <div class="stat"><h3>100%</h3><p>Compromisso sustentável</p></div>
+    <div class="stat"><h3>🌎</h3><p>Respeito ao planeta</p></div>
+    <div class="stat"><h3>🤝</h3><p>Desenvolvimento responsável</p></div>
+  </div>
+</section>
+
+<section id="depoimentos">
+  <div class="section-title">
+    <h2>O Que Dizem Sobre Nosso Agro</h2>
+  </div>
+  <div class="testimonials">
+    <div class="testimonial">
+      <p>"A Agro Forte trouxe inovação e sustentabilidade para nossa produção!"</p>
+      <span>- João Silva, Produtor Rural</span>
+    </div>
+    <div class="testimonial">
+      <p>"Investir em energia renovável fez toda a diferença para o nosso campo."</p>
+      <span>- Maria Oliveira, Agrônoma</span>
+    </div>
+    <div class="testimonial">
+      <p>"O equilíbrio entre produção e preservação é nosso diferencial."</p>
+      <span>- Ricardo Santos, Empresa AgroTech</span>
+    </div>
+  </div>
+</section>
+
+<section id="parceiros">
+  <div class="section-title">
+    <h2>Nossos Parceiros</h2>
+  </div>
+  <div class="partners">
+    <div class="partner">🌱 Embrapa</div>
+    <div class="partner">💧 FAE</div>
+    <div class="partner">🌾 AgroTech</div>
+    <div class="partner">♻️ SustentAgro</div>
+  </div>
+</section>
+
+<section class="banner">
+  <h2>O Campo Que Alimenta e Preserva</h2>
+  <p>Tecnologia, inovação e responsabilidade ambiental caminham juntas para um futuro sustentável.</p>
+</section>
+
+<button id="topBtn">⬆️</button>
+
+<footer>
+  <p>© 2026 Agro Forte • Futuro Sustentável</p>
+</footer>
+
+<script>
+  // Scroll suave
+  document.querySelectorAll('nav a').forEach(anchor => {
+    anchor.addEventListener('click', e => {
+      e.preventDefault();
+      document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+    });
+  });
+
+  // Botão voltar ao topo
+  const topBtn = document.getElementById('topBtn');
+  window.onscroll = () => { topBtn.style.display = window.scrollY > 400 ? 'block' : 'none'; };
+  topBtn.onclick = () => { window.scrollTo({ top: 0, behavior: 'smooth' }); };
+</script>
+
+</body>
+</html>
